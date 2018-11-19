@@ -1,0 +1,24 @@
+{
+  "name": "p2-harlin_kristen",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src -d lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kristenharlin/p2-harlin_kristen.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kristenharlin/p2-harlin_kristen/issues"
+  },
+  "homepage": "https://github.com/kristenharlin/p2-harlin_kristen#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0"
+  }
+}

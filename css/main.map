@@ -1,0 +1,14 @@
+{
+	"version": 3,
+	"file": "../scss/main.css",
+	"sources": [
+		"../scss/main.scss",
+		"../scss/variables.scss"
+	],
+	"sourcesContent": [
+		"@import \"variables\";\n\n*{\n  border: 0;\n  margin: 0;\n  padding: 0;\n}\n",
+		"$white: #ffffff;\n"
+	],
+	"mappings": ";AAEA,AAAA,CAAC,CAAA;EACC,MAAM,EAAE,CAAE;EACV,MAAM,EAAE,CAAE;EACV,OAAO,EAAE,CAAE;CACZ",
+	"names": []
+}
