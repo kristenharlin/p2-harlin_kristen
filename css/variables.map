@@ -5,7 +5,7 @@
 		"../scss/variables.scss"
 	],
 	"sourcesContent": [
-		"$white: #ffffff;\n"
+		"$white: #ffffff;\n\n$sans: 'Nunito';\n"
 	],
 	"mappings": "",
 	"names": []

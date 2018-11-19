@@ -1,8 +1,14 @@
-/* line 3, /Users/kristenharlin/Documents/_GatorFiles/_2018-fall-web2/p2-harlin_kristen/scss/main.scss */
+@import url("https://fonts.googleapis.com/css?family=Nunito");
+/* line 4, /Users/kristenharlin/Documents/_GatorFiles/_2018-fall-web2/p2-harlin_kristen/scss/main.scss */
 * {
   border: 0;
   margin: 0;
   padding: 0;
+}
+
+/* line 10, /Users/kristenharlin/Documents/_GatorFiles/_2018-fall-web2/p2-harlin_kristen/scss/main.scss */
+p {
+  font-family: "Nunito";
 }
 
 /*# sourceMappingURL=../css/main.map */

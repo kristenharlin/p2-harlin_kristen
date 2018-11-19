@@ -1,0 +1,12 @@
+@import "variables";
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+*{
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-family: $sans;
+}

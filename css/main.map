@@ -6,9 +6,9 @@
 		"../scss/variables.scss"
 	],
 	"sourcesContent": [
-		"@import \"variables\";\n\n*{\n  border: 0;\n  margin: 0;\n  padding: 0;\n}\n",
-		"$white: #ffffff;\n"
+		"@import \"variables\";\n@import url('https://fonts.googleapis.com/css?family=Nunito');\n\n*{\n  border: 0;\n  margin: 0;\n  padding: 0;\n}\n\np {\n  font-family: $sans;\n}\n",
+		"$white: #ffffff;\n\n$sans: 'Nunito';\n"
 	],
-	"mappings": ";AAEA,AAAA,CAAC,CAAA;EACC,MAAM,EAAE,CAAE;EACV,MAAM,EAAE,CAAE;EACV,OAAO,EAAE,CAAE;CACZ",
+	"mappings": "AACA,OAAO,CAAC,qDAAI;;AAEZ,AAAA,CAAC,CAAA;EACC,MAAM,EAAE,CAAE;EACV,MAAM,EAAE,CAAE;EACV,OAAO,EAAE,CAAE;CACZ;;;AAED,AAAA,CAAC,CAAC;EACA,WAAW,ECRN,QAAQ;CDSd",
 	"names": []
 }
