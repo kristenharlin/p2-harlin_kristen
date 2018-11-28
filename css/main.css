@@ -68,8 +68,11 @@ p {
 }
 
 /* line 57, /Users/kristenharlin/Documents/_GatorFiles/_2018-fall-web2/p2-harlin_kristen/scss/main.scss */
-.white {
-  background-color: #ffffff;
+.transparent {
+  opacity: 0;
+  transition: opacity .25s;
+  -webkit-transition: opacity .25s;
+  -moz-transition: opacity .25s;
 }
 
 /*# sourceMappingURL=../css/main.map */
