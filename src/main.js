@@ -3,7 +3,6 @@
 const colorName = document.getElementsByTagName('p');
 const colorBlock = document.getElementsByClassName('square');
 
-
 function wrapper() {
 
   const flashColor = () => {
