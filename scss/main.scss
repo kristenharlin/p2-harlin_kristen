@@ -21,14 +21,7 @@ p {
   width: 100%;
   flex-wrap: wrap;
   @media (min-width: 500px){
-    flex-wrap: nowrap;
-    height: 50vh;
-  }
-}
-
-.row {
-  @media (min-width: 500px){
-    display: flex;
+    //height: 50vh;
     flex-direction: row;
   }
 }

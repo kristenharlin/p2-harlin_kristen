@@ -1,9 +1,9 @@
 // variables to select color
 
 const colorName = document.getElementsByTagName('p');
-const colorBlock = document.getElementsByClassName('square');
-const colorSection = document.getElementById('sect1');
-const numberSection = document.getElementById('sect2');
+const colorBlock = document.querySelectorAll('.square');
+//const colorSection = document.getElementById('sect1');
+//const numberSection = document.getElementById('sect2');
 
 function wrapper() {
 
@@ -25,12 +25,12 @@ function wrapper() {
   };
   loopThrough();
 
-  const hideSquare = () => {
-    colorSection.classList.toggle('hide');
-    numberSection.classList.toggle('hide');
-  };
+  //const hideSquare = () => {
+  //  colorSection.classList.toggle('hide');
+  //  numberSection.classList.toggle('hide');
+  //};
 
-  hideSquare();
+  //hideSquare();
 
 
 };
