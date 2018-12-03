@@ -7,7 +7,6 @@ const colorName = document.getElementsByTagName('p');
 function wrapper() {
 
   const flashColor = () => {
-    //colorBlocks.classList.toggle('transparent');
     let colorChosen = this.parentNode;
     colorChosen.classList.toggle('transparent');
   };
