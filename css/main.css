@@ -16,6 +16,13 @@ p {
 }
 
 /* line 18, /Users/kristenharlin/Documents/_GatorFiles/_2018-fall-web2/p2-harlin_kristen/scss/main.scss */
+#sect1 {
+  transition: opacity .25s;
+  -webkit-transition: opacity .25s;
+  -moz-transition: opacity .25s;
+}
+
+/* line 24, /Users/kristenharlin/Documents/_GatorFiles/_2018-fall-web2/p2-harlin_kristen/scss/main.scss */
 .square {
   display: flex;
   text-align: center;
@@ -27,38 +34,47 @@ p {
 }
 
 @media (min-width: 500px) {
-  /* line 18, /Users/kristenharlin/Documents/_GatorFiles/_2018-fall-web2/p2-harlin_kristen/scss/main.scss */
+  /* line 24, /Users/kristenharlin/Documents/_GatorFiles/_2018-fall-web2/p2-harlin_kristen/scss/main.scss */
   .square {
+    flex-wrap: nowrap;
+    height: 50vh;
+  }
+}
+
+@media (min-width: 500px) {
+  /* line 35, /Users/kristenharlin/Documents/_GatorFiles/_2018-fall-web2/p2-harlin_kristen/scss/main.scss */
+  .row {
+    display: flex;
     flex-direction: row;
   }
 }
 
-/* line 30, /Users/kristenharlin/Documents/_GatorFiles/_2018-fall-web2/p2-harlin_kristen/scss/main.scss */
+/* line 43, /Users/kristenharlin/Documents/_GatorFiles/_2018-fall-web2/p2-harlin_kristen/scss/main.scss */
 .hide {
   display: none;
 }
 
-/* line 34, /Users/kristenharlin/Documents/_GatorFiles/_2018-fall-web2/p2-harlin_kristen/scss/main.scss */
+/* line 47, /Users/kristenharlin/Documents/_GatorFiles/_2018-fall-web2/p2-harlin_kristen/scss/main.scss */
 .persimmon {
   background-color: #EC5800;
 }
 
-/* line 38, /Users/kristenharlin/Documents/_GatorFiles/_2018-fall-web2/p2-harlin_kristen/scss/main.scss */
+/* line 51, /Users/kristenharlin/Documents/_GatorFiles/_2018-fall-web2/p2-harlin_kristen/scss/main.scss */
 .indigo {
   background-color: #000080;
 }
 
-/* line 42, /Users/kristenharlin/Documents/_GatorFiles/_2018-fall-web2/p2-harlin_kristen/scss/main.scss */
+/* line 55, /Users/kristenharlin/Documents/_GatorFiles/_2018-fall-web2/p2-harlin_kristen/scss/main.scss */
 .lavender {
   background-color: #9F90D0;
 }
 
-/* line 46, /Users/kristenharlin/Documents/_GatorFiles/_2018-fall-web2/p2-harlin_kristen/scss/main.scss */
+/* line 59, /Users/kristenharlin/Documents/_GatorFiles/_2018-fall-web2/p2-harlin_kristen/scss/main.scss */
 .silver {
   background-color: #C0C0C0;
 }
 
-/* line 50, /Users/kristenharlin/Documents/_GatorFiles/_2018-fall-web2/p2-harlin_kristen/scss/main.scss */
+/* line 63, /Users/kristenharlin/Documents/_GatorFiles/_2018-fall-web2/p2-harlin_kristen/scss/main.scss */
 .transparent {
   opacity: 0;
   transition: opacity .25s;

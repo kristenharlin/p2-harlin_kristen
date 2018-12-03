@@ -15,13 +15,26 @@ p {
   color: $white;
 }
 
+#sect1 {
+  transition: opacity .25s;
+  -webkit-transition: opacity .25s;
+  -moz-transition: opacity .25s;
+}
+
 .square {
   @include flex-center;
   height: 25vh;
   width: 100%;
   flex-wrap: wrap;
   @media (min-width: 500px){
-    //height: 50vh;
+    flex-wrap: nowrap;
+    height: 50vh;
+  }
+}
+
+.row {
+  @media (min-width: 500px){
+    display: flex;
     flex-direction: row;
   }
 }

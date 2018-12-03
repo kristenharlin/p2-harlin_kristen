@@ -1,15 +1,15 @@
 // variables to select color
 
 const colorName = document.getElementsByTagName('p');
-const colorBlock = document.querySelectorAll('.square');
 //const colorSection = document.getElementById('sect1');
 //const numberSection = document.getElementById('sect2');
 
 function wrapper() {
 
   const flashColor = () => {
-    //colorBlock.classList.toggle('transparent');
-    console.log('wow');
+    //colorBlocks.classList.toggle('transparent');
+    let colorChosen = this.parentNode;
+    colorChosen.classList.toggle('transparent');
   };
 
   const loopThrough = () => {
