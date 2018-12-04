@@ -7,7 +7,7 @@
 }
 
 /* line 10, /Users/kristenharlin/Documents/_GatorFiles/_2018-fall-web2/p2-harlin_kristen/scss/main.scss */
-#fortune-wrapper {
+.fortune {
   background-color: #EC5800;
   height: 100vh;
   display: flex;

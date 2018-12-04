@@ -7,7 +7,7 @@
   padding: 0;
 }
 
-#fortune-wrapper {
+.fortune {
   background-color: $persimmon;
   height: 100vh;
   @include flex-center;

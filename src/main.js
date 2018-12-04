@@ -6,7 +6,7 @@ const colorSection = document.getElementById('sect1');
 // variables to select number
 const numberName = document.querySelectorAll('#sect2 p');
 const numberSection = document.getElementById('sect2');
-
+const fortuneSection = document.getElementById('fortune-wrapper');
 ////////////section 1 functionality
 
 function wrapper() {
@@ -69,6 +69,7 @@ function wrapper2 (){
   yourFortuneGoesHere.appendChild(fortunePlaceholder);
 
   const revealFortune = () => {
+    fortuneSection.classList.toggle('hide');
     fortunes.sort(function(a, b){return 0.5 - Math.random()});
     let fortuneText = document.createTextNode(fortunes[0]);
     yourFortuneGoesHere.appendChild(fortuneText);
