@@ -34,7 +34,7 @@ function wrapper() {
         setTimeout(function(){
           flashColor();
         }, i * 500);
-        // following will hide numbers after the flashColor
+        // following will hide colors after the flashColor
       } else if (i === blocksTextLengthTwo){
         setTimeout(function(){
           hideSquare();
@@ -48,9 +48,20 @@ function wrapper() {
 };
 
 function wrapper2 (){
+  const flashNumber = () => {
+    let numberChosen = this.parentNode;
+    numberChosen.classList.toggle('transparent');
+  };
+
   const loopThroughTwo = () => {
     let numberText = this.childNodes[0].nodeValue;
     let numberValue = parseInt(numberText);
+
+    for (let i = 0; i < numberValue * 2; i++) {
+      setTimeout(function(){
+        flashNumber();
+      }, i * 500);
+    };
   };
 
   loopThroughTwo();
