@@ -7,10 +7,11 @@ const colorSection = document.getElementById('sect1');
 const numberName = document.querySelectorAll('#sect2 p');
 const numberSection = document.getElementById('sect2');
 
+////////////section 1 functionality
+
 function wrapper() {
 
   // flash function
-
   const flashColor = () => {
     let colorChosen = this.parentNode;
     colorChosen.classList.toggle('transparent');
@@ -47,9 +48,18 @@ function wrapper() {
   loopThrough();
 };
 
+// section 2 functionality ///////////////////
+
+let clicks = 0;
+function clickCounter (){
+  clicks++;
+  console.log(clicks);
+};
+
 function wrapper2 (){
+  let numberChosen = this.parentNode;
+
   const flashNumber = () => {
-    let numberChosen = this.parentNode;
     numberChosen.classList.toggle('transparent');
   };
 
@@ -62,6 +72,7 @@ function wrapper2 (){
         flashNumber();
       }, i * 500);
     };
+
   };
 
   loopThroughTwo();
@@ -70,4 +81,5 @@ function wrapper2 (){
 for(let i = 0; i < colorName.length; i++) {
   colorName[i].addEventListener('click', wrapper);
   numberName[i].addEventListener('click', wrapper2);
+  numberName[i].addEventListener('click', clickCounter);
 };
