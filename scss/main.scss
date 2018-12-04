@@ -7,12 +7,23 @@
   padding: 0;
 }
 
+#fortune-wrapper {
+  background-color: $persimmon;
+  height: 100vh;
+  @include flex-center;
+}
+
 p {
   font-family: $sans;
   text-transform: uppercase;
   font-size: 1.1rem;
   letter-spacing: .25rem;
   color: $white;
+}
+
+a {
+  @extend p;
+  text-decoration: none;
 }
 
 .square {
