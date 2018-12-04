@@ -1,37 +1,46 @@
 // variables to select color
 
-const colorName = document.getElementsByTagName('p');
-//const colorSection = document.getElementById('sect1');
-//const numberSection = document.getElementById('sect2');
+const colorName = document.querySelectorAll('#sect1 p');
+const colorSection = document.getElementById('sect1');
+const numberSection = document.getElementById('sect2');
 
 function wrapper() {
+
+  // flash function
 
   const flashColor = () => {
     let colorChosen = this.parentNode;
     colorChosen.classList.toggle('transparent');
   };
 
+  // write function to toggle hide class
+  const hideSquare = () => {
+    colorSection.classList.toggle('hide');
+    numberSection.classList.toggle('hide');
+  };
+
+  // loop as many times as text node length
   const loopThrough = () => {
     let colorBlocksText = this.childNodes[0].nodeValue;
-    let BlocksTextLength = colorBlocksText.length;
+    let blocksTextLength = colorBlocksText.length;
+    let blocksTextLengthTwo = blocksTextLength * 2;
 
-    for (let i = 0; i < BlocksTextLength * 2; i++) {
-      setTimeout(function(){
-        flashColor();
-      }, i * 1000);
+    // set timeout value + call function flashColor
+    for (let i = 0; i <= blocksTextLengthTwo; i++) {
+      if (i < blocksTextLength * 2) {
+        setTimeout(function(){
+          flashColor();
+        }, i * 500);
+      } else if (i === blocksTextLengthTwo){
+        setTimeout(function(){
+          hideSquare();
+        }, i * 500);
+      };
     };
 
   };
+  // call function to flash on click
   loopThrough();
-
-  //const hideSquare = () => {
-  //  colorSection.classList.toggle('hide');
-  //  numberSection.classList.toggle('hide');
-  //};
-
-  //hideSquare();
-
-
 };
 
 for(let i = 0; i < colorName.length; i++) {
