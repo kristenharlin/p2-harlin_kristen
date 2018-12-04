@@ -63,7 +63,15 @@ function wrapper2 (){
     numberChosen.classList.toggle('transparent');
   };
 
-  const revealFortune = ()=> {
+  const fortunes = ['Today is not your day.', 'You are a beautiful tropical fish.', 'Whatever you are, be a good one.', 'Ask me again later.', 'Unsubscribe.', 'Clear your head with some Mario Kart.', 'Have some wine and talk it through with a friend.', 'Sounds like you are hangry. Eat a sandwich and ask again.', 'You got this!', 'You will meet a cute dog today.'];
+  const yourFortuneGoesHere = document.querySelector('#fortune-wrapper p span');
+  const fortunePlaceholder = document.createTextNode('');
+  yourFortuneGoesHere.appendChild(fortunePlaceholder);
+
+  const revealFortune = () => {
+    fortunes.sort(function(a, b){return 0.5 - Math.random()});
+    let fortuneText = document.createTextNode(fortunes[0]);
+    yourFortuneGoesHere.appendChild(fortuneText);
     console.log('function is to come.');
   };
 
