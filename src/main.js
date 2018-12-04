@@ -63,16 +63,29 @@ function wrapper2 (){
     numberChosen.classList.toggle('transparent');
   };
 
+  const revealFortune = ()=> {
+    console.log('function is to come.');
+  };
+
   const loopThroughTwo = () => {
     let numberText = this.childNodes[0].nodeValue;
     let numberValue = parseInt(numberText);
+    let numberValueTimesTwo = numberValue * 2;
 
-    for (let i = 0; i < numberValue * 2; i++) {
-      setTimeout(function(){
-        flashNumber();
-      }, i * 500);
+
+    for (let i = 0; i <= numberValueTimesTwo; i++) {
+      if (i < numberValueTimesTwo){
+        setTimeout(function(){
+          flashNumber();
+        }, i * 500);
+      } else if (i === numberValueTimesTwo && clicks === 1){
+        setTimeout(function(){
+          numberSection.classList.toggle('hide');
+          revealFortune();
+        }, i * 500);
+      }
+
     };
-
   };
 
   loopThroughTwo();
