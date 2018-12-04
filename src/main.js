@@ -2,6 +2,9 @@
 
 const colorName = document.querySelectorAll('#sect1 p');
 const colorSection = document.getElementById('sect1');
+
+// variables to select number
+const numberName = document.querySelectorAll('#sect2 p');
 const numberSection = document.getElementById('sect2');
 
 function wrapper() {
@@ -31,6 +34,7 @@ function wrapper() {
         setTimeout(function(){
           flashColor();
         }, i * 500);
+        // following will hide numbers after the flashColor
       } else if (i === blocksTextLengthTwo){
         setTimeout(function(){
           hideSquare();
@@ -43,6 +47,18 @@ function wrapper() {
   loopThrough();
 };
 
+function wrapper2 (){
+  const flashNumber = () => {
+    let numberText = this.childNodes[0].nodeValue;
+    let numberValue = parseInt(numberText);
+    console.log(numberValue);
+    console.log('hi');
+  };
+
+  flashNumber();
+};
+
 for(let i = 0; i < colorName.length; i++) {
   colorName[i].addEventListener('click', wrapper);
+  numberName[i].addEventListener('click', wrapper2);
 };
