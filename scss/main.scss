@@ -11,11 +11,13 @@
   background-color: $persimmon;
   height: 100vh;
   @include flex-center;
+  flex-direction: column;
 }
 
 p {
   font-family: $sans;
   text-transform: uppercase;
+  padding: 20px;
   font-size: 1.1rem;
   letter-spacing: .25rem;
   color: $white;
@@ -24,6 +26,7 @@ p {
 a {
   @extend p;
   text-decoration: none;
+  opacity: .6;
 }
 
 .square {
