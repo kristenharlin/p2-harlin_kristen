@@ -48,14 +48,12 @@ function wrapper() {
 };
 
 function wrapper2 (){
-  const flashNumber = () => {
+  const loopThroughTwo = () => {
     let numberText = this.childNodes[0].nodeValue;
     let numberValue = parseInt(numberText);
-    console.log(numberValue);
-    console.log('hi');
   };
 
-  flashNumber();
+  loopThroughTwo();
 };
 
 for(let i = 0; i < colorName.length; i++) {
