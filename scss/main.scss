@@ -15,17 +15,14 @@ p {
   color: $white;
 }
 
-#sect1 {
-  transition: opacity .25s;
-  -webkit-transition: opacity .25s;
-  -moz-transition: opacity .25s;
-}
-
 .square {
   @include flex-center;
   height: 25vh;
   width: 100%;
   flex-wrap: wrap;
+  transition: opacity .25s;
+  -webkit-transition: opacity .25s;
+  -moz-transition: opacity .25s;
   @media (min-width: 500px){
     flex-wrap: nowrap;
     height: 50vh;
