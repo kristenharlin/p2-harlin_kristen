@@ -1,23 +1,19 @@
 // Type
 $sans: 'Nunito';
-
 // colors
-
 $persimmon: #EC5800;
 $lavender: #9F90D0;
 $indigo: #000080;
 $silver: #C0C0C0;
 $white: #ffffff;
-
 @mixin flex-center {
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
 }
-
 @mixin opacity {
-  transition: opacity .25s;
-  -webkit-transition: opacity .25s;
-  -moz-transition: opacity .25s;
+	transition: opacity .25s;
+	-webkit-transition: opacity .25s;
+	-moz-transition: opacity .25s;
 }

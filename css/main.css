@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Nunito");
-/* line 4, /Users/kristenharlin/Documents/_GatorFiles/_2018-fall-web2/p2-harlin_kristen/scss/main.scss */
+/* line 3, /Users/kristenharlin/Documents/_GatorFiles/_2018-fall-web2/p2-harlin_kristen/scss/main.scss */
 * {
   border: 0;
   margin: 0;
   padding: 0;
 }
 
-/* line 10, /Users/kristenharlin/Documents/_GatorFiles/_2018-fall-web2/p2-harlin_kristen/scss/main.scss */
+/* line 8, /Users/kristenharlin/Documents/_GatorFiles/_2018-fall-web2/p2-harlin_kristen/scss/main.scss */
 .fortune {
   background-color: #EC5800;
   height: 100vh;
@@ -17,7 +17,7 @@
   flex-direction: column;
 }
 
-/* line 17, /Users/kristenharlin/Documents/_GatorFiles/_2018-fall-web2/p2-harlin_kristen/scss/main.scss */
+/* line 14, /Users/kristenharlin/Documents/_GatorFiles/_2018-fall-web2/p2-harlin_kristen/scss/main.scss */
 p, a {
   font-family: "Nunito";
   text-transform: uppercase;
@@ -27,13 +27,13 @@ p, a {
   color: #ffffff;
 }
 
-/* line 26, /Users/kristenharlin/Documents/_GatorFiles/_2018-fall-web2/p2-harlin_kristen/scss/main.scss */
+/* line 22, /Users/kristenharlin/Documents/_GatorFiles/_2018-fall-web2/p2-harlin_kristen/scss/main.scss */
 a {
   text-decoration: none;
   opacity: .6;
 }
 
-/* line 32, /Users/kristenharlin/Documents/_GatorFiles/_2018-fall-web2/p2-harlin_kristen/scss/main.scss */
+/* line 27, /Users/kristenharlin/Documents/_GatorFiles/_2018-fall-web2/p2-harlin_kristen/scss/main.scss */
 .square {
   display: flex;
   text-align: center;
@@ -48,7 +48,7 @@ a {
 }
 
 @media (min-width: 500px) {
-  /* line 32, /Users/kristenharlin/Documents/_GatorFiles/_2018-fall-web2/p2-harlin_kristen/scss/main.scss */
+  /* line 27, /Users/kristenharlin/Documents/_GatorFiles/_2018-fall-web2/p2-harlin_kristen/scss/main.scss */
   .square {
     flex-wrap: nowrap;
     height: 50vh;
@@ -56,14 +56,14 @@ a {
 }
 
 @media (min-width: 500px) {
-  /* line 44, /Users/kristenharlin/Documents/_GatorFiles/_2018-fall-web2/p2-harlin_kristen/scss/main.scss */
+  /* line 38, /Users/kristenharlin/Documents/_GatorFiles/_2018-fall-web2/p2-harlin_kristen/scss/main.scss */
   .row {
     display: flex;
     flex-direction: row;
   }
 }
 
-/* line 52, /Users/kristenharlin/Documents/_GatorFiles/_2018-fall-web2/p2-harlin_kristen/scss/main.scss */
+/* line 44, /Users/kristenharlin/Documents/_GatorFiles/_2018-fall-web2/p2-harlin_kristen/scss/main.scss */
 .hide {
   display: none;
   transition: opacity .25s;
@@ -71,27 +71,27 @@ a {
   -moz-transition: opacity .25s;
 }
 
-/* line 57, /Users/kristenharlin/Documents/_GatorFiles/_2018-fall-web2/p2-harlin_kristen/scss/main.scss */
+/* line 48, /Users/kristenharlin/Documents/_GatorFiles/_2018-fall-web2/p2-harlin_kristen/scss/main.scss */
 .persimmon {
   background-color: #EC5800;
 }
 
-/* line 61, /Users/kristenharlin/Documents/_GatorFiles/_2018-fall-web2/p2-harlin_kristen/scss/main.scss */
+/* line 51, /Users/kristenharlin/Documents/_GatorFiles/_2018-fall-web2/p2-harlin_kristen/scss/main.scss */
 .indigo {
   background-color: #000080;
 }
 
-/* line 65, /Users/kristenharlin/Documents/_GatorFiles/_2018-fall-web2/p2-harlin_kristen/scss/main.scss */
+/* line 54, /Users/kristenharlin/Documents/_GatorFiles/_2018-fall-web2/p2-harlin_kristen/scss/main.scss */
 .lavender {
   background-color: #9F90D0;
 }
 
-/* line 69, /Users/kristenharlin/Documents/_GatorFiles/_2018-fall-web2/p2-harlin_kristen/scss/main.scss */
+/* line 57, /Users/kristenharlin/Documents/_GatorFiles/_2018-fall-web2/p2-harlin_kristen/scss/main.scss */
 .silver {
   background-color: #C0C0C0;
 }
 
-/* line 73, /Users/kristenharlin/Documents/_GatorFiles/_2018-fall-web2/p2-harlin_kristen/scss/main.scss */
+/* line 60, /Users/kristenharlin/Documents/_GatorFiles/_2018-fall-web2/p2-harlin_kristen/scss/main.scss */
 .transparent {
   opacity: 0;
   transition: opacity .25s;

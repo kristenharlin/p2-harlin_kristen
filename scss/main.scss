@@ -1,76 +1,63 @@
 @import "variables";
 @import url('https://fonts.googleapis.com/css?family=Nunito');
-
-*{
-  border: 0;
-  margin: 0;
-  padding: 0;
+* {
+	border: 0;
+	margin: 0;
+	padding: 0;
 }
-
 .fortune {
-  background-color: $persimmon;
-  height: 100vh;
-  @include flex-center;
-  flex-direction: column;
+	background-color: $persimmon;
+	height: 100vh;
+	@include flex-center;
+	flex-direction: column;
 }
-
 p {
-  font-family: $sans;
-  text-transform: uppercase;
-  padding: 20px;
-  font-size: 1.1rem;
-  letter-spacing: .25rem;
-  color: $white;
+	font-family: $sans;
+	text-transform: uppercase;
+	padding: 20px;
+	font-size: 1.1rem;
+	letter-spacing: .25rem;
+	color: $white;
 }
-
 a {
-  @extend p;
-  text-decoration: none;
-  opacity: .6;
+	@extend p;
+	text-decoration: none;
+	opacity: .6;
 }
-
 .square {
-  @include flex-center;
-  @include opacity;
-  height: 25vh;
-  width: 100%;
-  flex-wrap: wrap;
-  @media (min-width: 500px){
-    flex-wrap: nowrap;
-    height: 50vh;
-  }
+	@include flex-center;
+	@include opacity;
+	height: 25vh;
+	width: 100%;
+	flex-wrap: wrap;
+	@media (min-width: 500px) {
+		flex-wrap: nowrap;
+		height: 50vh;
+	}
 }
-
 .row {
-  @media (min-width: 500px){
-    display: flex;
-    flex-direction: row;
-  }
+	@media (min-width: 500px) {
+		display: flex;
+		flex-direction: row;
+	}
 }
-
-
 .hide {
-  display: none;
-  @include opacity;
+	display: none;
+	@include opacity;
 }
-
 .persimmon {
-  background-color: $persimmon;
+	background-color: $persimmon;
 }
-
 .indigo {
-  background-color: $indigo;
+	background-color: $indigo;
 }
-
 .lavender {
-  background-color: $lavender;
+	background-color: $lavender;
 }
-
 .silver {
-  background-color: $silver;
+	background-color: $silver;
 }
-
 .transparent {
-  opacity: 0;
-  @include opacity;
+	opacity: 0;
+	@include opacity;
 }
