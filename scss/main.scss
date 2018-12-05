@@ -31,12 +31,10 @@ a {
 
 .square {
   @include flex-center;
+  @include opacity;
   height: 25vh;
   width: 100%;
   flex-wrap: wrap;
-  transition: opacity .25s;
-  -webkit-transition: opacity .25s;
-  -moz-transition: opacity .25s;
   @media (min-width: 500px){
     flex-wrap: nowrap;
     height: 50vh;
@@ -53,6 +51,7 @@ a {
 
 .hide {
   display: none;
+  @include opacity;
 }
 
 .persimmon {
@@ -73,7 +72,5 @@ a {
 
 .transparent {
   opacity: 0;
-  transition: opacity .25s;
-  -webkit-transition: opacity .25s;
-  -moz-transition: opacity .25s;
+  @include opacity;
 }

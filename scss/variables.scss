@@ -15,3 +15,9 @@ $white: #ffffff;
   justify-content: center;
   align-items: center;
 }
+
+@mixin opacity {
+  transition: opacity .25s;
+  -webkit-transition: opacity .25s;
+  -moz-transition: opacity .25s;
+}
