@@ -61,6 +61,7 @@ function wrapper2() {
 	//turns on fortune section, returns random fortune
 	const revealFortune = () => {
 		fortuneSection.classList.toggle('hide');
+    numberSection.classList.toggle('hide');
 		fortunes.sort(function(a, b) {
 			return 0.5 - Math.random()
 		});
@@ -73,22 +74,22 @@ function wrapper2() {
 		let numberText = this.childNodes[0].nodeValue;
 		let numberValue = parseInt(numberText);
 		let numberValueTimesTwo = numberValue * 2;
-		for (let i = 0; i <= numberValueTimesTwo; i++) {
-			if (i < numberValueTimesTwo) {
-				//will flash function
-				setTimeout(function() {
-					flashNumber();
-				}, i * 500);
-			} else if (i === numberValueTimesTwo && clicks === 1) {
-				//on second click of number, will toggle view and show fortune
-				setTimeout(function() {
-					numberSection.classList.toggle('hide');
-					revealFortune();
-				}, i * 500);
-			}
+		for (let i = 0; i < numberValueTimesTwo; i++) {
+			//will flash function
+			setTimeout(function() {
+				flashNumber();
+			}, i * 500);
 		};
 	};
-	loopThroughTwo();
+	const whichFunctionShouldRun = () => {
+		if (clicks < 1) {
+			loopThroughTwo();
+		} else if (clicks === 1) {
+			//on second click of number, will toggle view and show fortune
+			revealFortune();
+		};
+	};
+	whichFunctionShouldRun();
 };
 // events listened for
 for (let i = 0; i < colorName.length; i++) {
